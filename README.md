@@ -45,7 +45,7 @@ teaching/
 
 ### 4. Exercises (`exercises/`)
 - แบบฝึกหัดสำหรับ นศ. ทำเอง (Jupyter notebooks)
-- มีเฉลยใน `exercises/solutions/`
+- เฉลยสามารถขอจากอาจารย์ผู้สอน
 
 ---
 
