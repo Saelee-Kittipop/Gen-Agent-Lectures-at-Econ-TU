@@ -1,0 +1,19 @@
+# Teaching materials - do not commit
+Dont commit to git/
+teaching/exercises/solutions/
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
