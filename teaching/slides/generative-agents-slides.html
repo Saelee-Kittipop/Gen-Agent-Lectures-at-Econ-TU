@@ -1353,32 +1353,124 @@
 </section>
 
 <section data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f2040 100%)">
-  <h2 style="margin-bottom:30px;">Real-World Applications</h2>
+  <h2 style="margin-bottom:20px;">Real-World Applications</h2>
   <p style="color:#aaa; margin-bottom:25px;">ตัวอย่างการนำ Generative Agents ไปใช้จริง</p>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; font-size:0.55em; text-align:left;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; font-size:0.6em; text-align:left;">
     <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; border-left:3px solid #e74c3c;">
-      <h4 style="color:#e74c3c; margin:0 0 8px 0;">🏦 NBER: General Social Agents</h4>
-      <p style="margin:0; color:#ccc;">ใช้ AI agents ทำนายพฤติกรรมมนุษย์ในเกมเศรษฐศาสตร์ ผลดีกว่า game theory models แบบดั้งเดิม</p>
-      <a href="https://www.nber.org/papers/w34937" style="color:#e74c3c; font-size:0.85em;">nber.org/papers/w34937</a>
+      <h4 style="color:#e74c3c; margin:0 0 5px 0;">NBER Paper</h4>
+      <p style="margin:0; color:#aaa;">เศรษฐศาสตร์พฤติกรรม</p>
     </div>
-
     <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; border-left:3px solid #3498db;">
-      <h4 style="color:#3498db; margin:0 0 8px 0;">🌐 OASIS — Social Media Simulation</h4>
-      <p style="margin:0; color:#ccc;">จำลองโซเชียลมีเดียด้วย LLM agents สูงสุด 1 ล้านตัว ศึกษาการแพร่ข่าว ความแบ่งขั้ว และพฤติกรรมฝูงชน</p>
-      <a href="https://github.com/camel-ai/oasis" style="color:#3498db; font-size:0.85em;">github.com/camel-ai/oasis</a>
+      <h4 style="color:#3498db; margin:0 0 5px 0;">OASIS</h4>
+      <p style="margin:0; color:#aaa;">จำลองโซเชียลมีเดีย</p>
     </div>
-
     <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; border-left:3px solid #2ecc71;">
-      <h4 style="color:#2ecc71; margin:0 0 8px 0;">🐟 MiroFish — Prediction Engine</h4>
-      <p style="margin:0; color:#ccc;">Open-source engine สร้าง agents หลายพันตัว มีบุคลิก+ความจำ เพื่อทำนายอนาคต (นโยบาย การเงิน)</p>
-      <a href="https://github.com/666ghj/MiroFish" style="color:#2ecc71; font-size:0.85em;">github.com/666ghj/MiroFish</a>
+      <h4 style="color:#2ecc71; margin:0 0 5px 0;">MiroFish</h4>
+      <p style="margin:0; color:#aaa;">ทำนายอนาคต</p>
     </div>
-
     <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; border-left:3px solid #f39c12;">
-      <h4 style="color:#f39c12; margin:0 0 8px 0;">🏛️ Aaru — Population Simulation</h4>
-      <p style="margin:0; color:#ccc;">บริษัทที่จำลองประชากรทั้งหมดเพื่อทำนายเหตุการณ์ ใช้ multi-agent simulation แทนการสำรวจแบบเดิม</p>
-      <a href="https://aaru.com/" style="color:#f39c12; font-size:0.85em;">aaru.com</a>
+      <h4 style="color:#f39c12; margin:0 0 5px 0;">Aaru</h4>
+      <p style="margin:0; color:#aaa;">จำลองประชากร</p>
+    </div>
+  </div>
+</section>
+
+<section data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f2040 100%)">
+  <h3 style="color:#e74c3c; margin-bottom:20px;">General Social Agents (NBER, 2026)</h3>
+  <p style="color:#aaa; font-size:0.6em; margin-bottom:20px;">Manning & Horton — <a href="https://www.nber.org/papers/w34937" style="color:#e74c3c;">nber.org/papers/w34937</a></p>
+
+  <div style="font-size:0.55em; text-align:left; max-width:850px; margin:0 auto;">
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; margin-bottom:15px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">ปัญหา</h4>
+      <p style="margin:0; color:#ccc;">ทฤษฎีเศรษฐศาสตร์มักใช้ไม่ได้พอเปลี่ยนบริบท ต้องปรับแก้เยอะ ทำให้ทำนายพฤติกรรมในสถานการณ์ใหม่ได้ยาก</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; margin-bottom:15px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">วิธีการ</h4>
+      <p style="margin:0; color:#ccc;">สร้าง AI agents จากข้อมูลมนุษย์ใน seed games จำนวนน้อย แล้วทดสอบกับ <strong style="color:#e74c3c;">883,320 สถานการณ์ใหม่</strong> ที่ agents ไม่เคยเห็น</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">ผลลัพธ์</h4>
+      <p style="margin:0; color:#ccc;">AI agents ทำนายพฤติกรรมมนุษย์ได้<strong style="color:#e74c3c;">แม่นกว่า</strong>ทั้ง cognitive hierarchy models, game-theoretic equilibria และ unmodified AI — แม้ในสถานการณ์ที่ไม่มีข้อมูลก่อนหน้า</p>
+    </div>
+  </div>
+</section>
+
+<section data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f2040 100%)">
+  <h3 style="color:#3498db; margin-bottom:20px;">OASIS — Social Media Simulation</h3>
+  <p style="color:#aaa; font-size:0.6em; margin-bottom:20px;">CAMEL-AI, Zhejiang University — <a href="https://github.com/camel-ai/oasis" style="color:#3498db;">github.com/camel-ai/oasis</a></p>
+
+  <div style="font-size:0.55em; text-align:left; max-width:850px; margin:0 auto;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-bottom:15px;">
+      <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+        <h4 style="color:#fff; margin:0 0 10px 0;">Scale</h4>
+        <p style="margin:0; color:#ccc;">รองรับ LLM agents สูงสุด <strong style="color:#3498db;">1,000,000 ตัว</strong> จำลอง Twitter และ Reddit</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+        <h4 style="color:#fff; margin:0 0 10px 0;">Actions</h4>
+        <p style="margin:0; color:#ccc;">Agents ทำได้ <strong style="color:#3498db;">23 actions</strong>: post, comment, follow, like, repost, search ฯลฯ</p>
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; margin-bottom:15px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">ศึกษาอะไรได้</h4>
+      <p style="margin:0; color:#ccc;">การแพร่กระจายข้อมูล (information dissemination) · ความแบ่งขั้วทางความคิด (group polarization) · พฤติกรรมฝูงชน (herd behavior) · ผลกระทบของ recommendation algorithm</p>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">Recommendation System</h4>
+      <p style="margin:0; color:#ccc;">มี algorithm 2 แบบ: <strong>interest-based</strong> (ตามความสนใจ) และ <strong>hot-score-based</strong> (ตามกระแส) เหมือนแพลตฟอร์มจริง</p>
+    </div>
+  </div>
+</section>
+
+<section data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f2040 100%)">
+  <h3 style="color:#2ecc71; margin-bottom:20px;">MiroFish — Swarm Intelligence Prediction</h3>
+  <p style="color:#aaa; font-size:0.6em; margin-bottom:20px;">Shanda Group · 26k+ GitHub Stars — <a href="https://github.com/666ghj/MiroFish" style="color:#2ecc71;">github.com/666ghj/MiroFish</a></p>
+
+  <div style="font-size:0.55em; text-align:left; max-width:850px; margin:0 auto;">
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; margin-bottom:15px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">วิธีทำงาน (5 ขั้นตอน)</h4>
+      <p style="margin:0; color:#ccc;">
+        1. <strong>Graph Construction</strong> — สร้าง knowledge graph จากข้อมูลด้วย GraphRAG<br>
+        2. <strong>Environment Setup</strong> — สร้าง agents พร้อมบุคลิกและความจำ (ใช้ Zep Cloud)<br>
+        3. <strong>Simulation</strong> — ปล่อย agents โต้ตอบกัน สังเกต emergent behavior<br>
+        4. <strong>Report</strong> — ReportAgent สรุปผลการทำนาย<br>
+        5. <strong>Deep Interaction</strong> — สนทนากับ agents หรือระบบรายงานได้
+      </p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+      <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+        <h4 style="color:#fff; margin:0 0 10px 0;">ตัวอย่างการใช้งาน</h4>
+        <p style="margin:0; color:#ccc;">ทำนายความคิดเห็นสาธารณะ · พยากรณ์การเงิน · ทดสอบนโยบาย · วิเคราะห์นิยาย <em>ความฝันในหอแดง</em> 300,000+ คำ</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+        <h4 style="color:#fff; margin:0 0 10px 0;">เทคโนโลยี</h4>
+        <p style="margin:0; color:#ccc;"><strong style="color:#2ecc71;">GraphRAG</strong> สร้าง knowledge graph · <strong style="color:#2ecc71;">Zep Cloud</strong> จัดการ memory · <strong style="color:#2ecc71;">OASIS</strong> เป็น simulation engine · รองรับ LLM ทุกตัว</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f2040 100%)">
+  <h3 style="color:#f39c12; margin-bottom:20px;">Aaru — Population Simulation Platform</h3>
+  <p style="color:#aaa; font-size:0.6em; margin-bottom:20px;">Commercial Product — <a href="https://aaru.com/" style="color:#f39c12;">aaru.com</a></p>
+
+  <div style="font-size:0.55em; text-align:left; max-width:850px; margin:0 auto;">
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px; margin-bottom:15px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">แนวคิด: "Simulate any decision"</h4>
+      <p style="margin:0; color:#ccc;">จำลองประชากรทั้งหมดด้วย multi-agent simulation เพื่อทำนายผลลัพธ์ก่อนตัดสินใจจริง — แทนที่การสำรวจ/สัมภาษณ์แบบเดิมที่มีอคติ</p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-bottom:15px;">
+      <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+        <h4 style="color:#fff; margin:0 0 10px 0;">ข้อได้เปรียบ</h4>
+        <p style="margin:0; color:#ccc;">ไม่มี survey bias · เข้าถึงกลุ่มที่หายาก (คนรวย, ผู้กำหนดนโยบาย) · ทดสอบสถานการณ์ที่ยังไม่เกิดขึ้นได้</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+        <h4 style="color:#fff; margin:0 0 10px 0;">ผลพิสูจน์</h4>
+        <p style="margin:0; color:#ccc;">จำลอง <strong style="color:#f39c12;">EY Global Wealth Research</strong> ได้ภายในคืนเดียว (ปกติใช้ 6 เดือน) ผลตรงกัน และจุดที่ต่าง <strong style="color:#f39c12;">Aaru แม่นกว่า</strong></p>
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.05); padding:18px; border-radius:10px;">
+      <h4 style="color:#fff; margin:0 0 10px 0;">กลุ่มลูกค้า</h4>
+      <p style="margin:0; color:#ccc;">Wealth management · Asset management · Policy makers · Enterprise — ทำนายราคา, พฤติกรรมการเลือกตั้ง, ประสิทธิภาพการตลาด, อัตราการใช้งานผลิตภัณฑ์</p>
     </div>
   </div>
 </section>
